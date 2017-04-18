@@ -99,10 +99,7 @@ func possibleRookPosition(pieceLocation: Location) -> Set<Location> {
     return validEndLocations
 }
 
-func listValidEndLocations(piece: Piece, pieceLocation: Location) -> Set<Location> {
-
-    let validEndLocations: Set<Location> = Set()
-    
+func listValidEndLocations(piece: Piece, pieceLocation: Location) -> Set<Location> {    
     switch piece {
     case .knight:
         return possibleKnightPosition(pieceLocation: pieceLocation)
@@ -111,7 +108,6 @@ func listValidEndLocations(piece: Piece, pieceLocation: Location) -> Set<Locatio
         return possibleRookPosition(pieceLocation: pieceLocation)
     }
     
-    return validEndLocations
     
 }
 
